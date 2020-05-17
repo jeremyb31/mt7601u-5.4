@@ -444,7 +444,7 @@ static int mt7601u_load_firmware(struct mt7601u_dev *dev)
 	mt7601u_wr(dev, 0x94c, 0);
 	mt7601u_wr(dev, MT_FCE_PSE_CTRL, 0);
 
-	mt7601u_vendor_reset(dev);
+	//mt7601u_vendor_reset(dev);
 	msleep(5);
 
 	mt7601u_wr(dev, 0xa44, 0);
